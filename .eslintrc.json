@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+	"plugins": ["@emotion", "prettier"],
+	"rules": {
+		"@emotion/pkg-renaming": "error",
+		"prettier/prettier": "error"
+	}
 }
